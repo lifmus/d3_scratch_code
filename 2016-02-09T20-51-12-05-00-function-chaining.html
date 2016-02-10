@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js" charset="utf-8"></script>
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+  <script type="text/javascript">
+    var someData = [1,2,3,4,5];
+    d3.selectAll("div").data(someData).enter().append("div").html("Wow").append("span").html("Even More Wow").style("font-weight", "900");
+  </script>
+</body>
+</html>
+
+An example from D3.js in Action. .enter() tells d3 to append dvis when there are more elements in array than actual divs from the selectAll.
