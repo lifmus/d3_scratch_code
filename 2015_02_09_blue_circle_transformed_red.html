@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js" charset="utf-8"></script>
+  <svg height="200" width="200">
+    <circle cx="100" cy="100" r="50" fill="blue" />
+  </svg>
+  <script>
+    d3.selectAll("circle").style("fill", "red").attr("cx", 50);
+  </script>
+</body>
+</html>
+
+<!-- Uses d3 to change fill color of circle to red and move center of circle to x of 50 instead of 100 -->
