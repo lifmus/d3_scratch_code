@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.min.js" charset="utf-8"></script>
+  <div></div>
+  <div></div>
+  <script>
+    d3.selectAll("div").data([1,5,11,3]);
+  </script>
+</body>
+</html>
+
+<!-- At first I thought this would bind data to a single html data attribute. It turns out it's actually bound to individual divs so if you inspect each div using d3.select(), you'll see it in the __data__ on the div -->
