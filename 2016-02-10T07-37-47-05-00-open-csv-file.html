@@ -8,7 +8,9 @@
   <script type="text/javascript">
     d3.csv("/sample_files/cities.csv", function(data)
       {
-        console.log(data)
+        var minimum = d3.min(data, function(el) { return +el.population});
+        console.log(minimum);
+        console.log(data);
       })
   </script>
 </body>
