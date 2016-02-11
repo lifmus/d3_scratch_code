@@ -1,0 +1,42 @@
+text {
+  font-size: 10px;
+}
+
+g > text.active {
+  font-size: 30px;
+}
+
+circle {
+  fill: pink;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+circle.active {
+  fill: red;
+}
+
+circle.inactive {
+  fill: gray;
+}
+
+#modal {
+  position:fixed;
+  left:150px;
+  top:20px;
+  z-index:1;
+  background: white;
+  border: 1px black solid;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+tr {
+  border: 1px gray solid;
+}
+
+td {
+  font-size: 10px;
+}
+td.data {
+  font-weight: 900;
+}
